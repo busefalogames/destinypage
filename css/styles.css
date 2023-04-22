@@ -264,6 +264,7 @@ en vex de rems que es la medida normal de letras*/
     flex-direction: row;
     
     /*justify ordena donde en la pagina van a estar los elementos dentro del display
+    justify se divide en content que organiza repsecto al padre e items que organiza en base a los hiijos
     space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
     justify-content: space-around;
     /*style bitch*/
@@ -313,5 +314,4 @@ en vex de rems que es la medida normal de letras*/
     flex-wrap: wrap-reverse;
     order: 4;
 }
-
-
+/*grids, lo use en allies*/

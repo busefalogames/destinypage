@@ -1,0 +1,209 @@
+
+body
+{
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+}
+
+.grid-containeer
+{
+    /*se puede divvidir en fracciones (fr) o en pixeles (px) 
+la fraccion se adapta a la pantalla mientras que los pixeles no
+se puede escribir repeat para conservar el tamaño en todas escribiendo en formato 
+:repeat (cantidad de vveces a repetir, tamaño a repetir)*/
+    display: grid;
+
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 750px);
+    background-color: black;
+    border: solid blue;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    text-justify: center;
+
+}
+
+.Raids,.Dungeons,.Playlists,.Europa,.DOE,.TheMoon,.DreamingCity,.Neomuna,.Nessus,.STW,.EDZ,.Cosmodrome
+{
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.Raids
+{
+    background-image: url(../img/raids.jpg);
+    
+
+}
+.Dungeons
+{
+    
+    background-image: url(../img/dungeons.jpg);
+    
+    
+    
+}
+.Playlists
+{
+    background-image: url(../img/coreplaylist.jpg);
+
+}
+
+.DOE
+{
+    
+    background-image: url(../img/daresofeternity.jpg);
+
+}
+.Europa
+{
+    
+    background-image: url(../img/europa.jpg);
+
+}
+.TheMoon
+{
+    
+    background-image: url(../img/themoon.jpg);
+ 
+}
+.DreamingCity
+{
+    
+    background-image: url(../img/dreaming\ city.jpg);
+
+}
+.Nessus
+{
+    
+    background-image: url(../img/nessus.jpg);
+  
+}
+.Neomuna
+{
+    
+    background-image: url(../img/neomuna.jpg);
+  
+}
+.STW
+{
+    
+    background-image: url(../img/savathunthroneworld.jpg);
+
+}
+.Cosmodrome
+{
+    
+    background-image: url(../img/cosmodrome.jpg);
+    
+}
+.EDZ
+{
+    
+    background-image: url(../img/edz.jpg);
+   
+}
+.guia2
+{
+    background-color: gray;
+    display: flex;
+    text-decoration: none;
+    /*la direccion afecta como se organizan las cosass
+    esta row que es por defecto
+    reverse row que invierte el orden de las cosas
+    colum lo hace una columna
+    reverse colum lo opone*/
+    flex-direction: row;
+    
+    /*justify ordena donde en la pagina van a estar los elementos dentro del display
+    space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
+    justify-content: space-around;
+    /*style bitch*/
+    padding: 4px;
+    /*align los ordena en el eje x mientras que justfy lo hace en el y*/
+    align-items: center;
+    gap: 10px;
+    list-style: url("../img/thetravelertiny.png");
+
+}
+#grilla
+{
+   
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav TowerAllies loreallies"
+        "nav FieldAllies loreallies"
+        "nav footer footer";
+    grid-template-rows: 1fr 3fr 3fr 2fr;
+    grid-template-columns: 20% 40% 40%;
+    column-gap: 15px;
+    row-gap: 25px;
+    border: solid  5px   white;
+    background-color: gray;
+    height: 100vh;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace, bold;
+    
+}
+.border
+    {
+        border: 5px solid white;
+        background-color: gray ;
+    }
+header
+    {
+        grid-area: header;
+    }
+footer
+    {
+        grid-area: footer;
+    }
+section#FieldAllies
+    {
+        grid-area: FieldAllies;
+    }
+section#TowerAllies
+    {
+        grid-area: TowerAllies;
+    }
+nav 
+    {
+        grid-area: nav;
+    }
+aside
+    {
+        grid-area: aside;
+    }
+section#loreallies
+{
+    grid-area: loreallies;
+}
+.guia
+{
+    background-color: gray;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    /*la direccion afecta como se organizan las cosass
+    esta row que es por defecto
+    reverse row que invierte el orden de las cosas
+    colum lo hace una columna
+    reverse colum lo opone*/
+    flex-direction: column;
+    
+    /*justify ordena donde en la pagina van a estar los elementos dentro del display
+    space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
+    justify-content: space-around;
+    /*style bitch*/
+    padding: 4px;
+    /*align los ordena en el eje x mientras que justfy lo hace en el y*/
+    align-items: left;
+    gap: 10px;
+    list-style: url("../img/thetravelertiny.png");
+
+
+}
