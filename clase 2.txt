@@ -1,0 +1,57 @@
+Hoy listas
+una lista es un elemento que permite agrupar mas elementos, sirve  para hacer menus por ejemplo
+hay 3 tipos de listas
+	las 2 mas usadas son listas no ordenadas y ordenadas
+		<ol> una lista no organizada puede ser una lista de compras, donde el orden de los factores no afecta el producto
+		<ul> en las listas ordenadas el orden de cosas es relevante, se considera como un orden de paso a paso como una receta de cocina
+	la tercera es una lista de definicion
+		<dl> una lista de definicion sirve para un sitio universitario, es poco probable que la usemos (tendria que averiguar mas)
+Dentro de la lista hay que agregar el elemento <li> para señalizar un item de lista
+semanticamente se debe colocar dentro de <header> y dentro de eso en <nav>
+
+Enlaces
+	como buena practica los enlaces absolutos no van dentro del nav.
+ los enlaces tambien conocidos como links o anchors se utilizan para relacionar distintas partes del mismo docujmento. se ven subrayados
+ Para crear uno se utiliza la etiqueta <a> (anchor), esto te autocompletara una linea, entre comillas hay que póner el link,target "_blank" para que abra una tab nueva 
+	y luego entre los >< hay que colocar el nombre al link ejemplo:
+	<a href="https://www.youtube.com/" target="_blank">pagina de conocimiento infinito</a>
+ Existen dos tipos
+	absolutos:
+		Los enlaces absolutos son aquellos que el destino sea directo y no puede ser dentro de la misma pagina
+		estos no irian dentro del nav porque nos saca de nuestra pagina
+		<a href="https://www.youtube.com/" target="_blank">pagina de conocimiento infinito</a>
+	relativos:
+		son aquellos que apuntan a una seccion de nuestro sitio o tmar un archivo de nuestro sitio
+		<a href="pages/asesoriadecodigo.html">asesoria de codigo</a>
+	internos:
+		estos enlaces te llevan dentro de la misma pagina a otra seccion, por ejemplo volver para arriba
+		se requiere poner un id dentro de la seccion a la que se quiere volver
+		<a href="#arriba">Volver al Inicio</a>
+
+para tener mulktiples paginas la carpeta se debe llamar pages, de otra forma no se reconoce
+
+Para poner imagenes se tiene que crear una carpeta para imagenes llamada img y luego crear un <a> y completar
+	<a href="index.html">
+            <img src="img/nombre de imagen" alt="" tittle ="">
+        </a>
+	tambien se puede completar con un link pero no es recomendable
+	en src poner la fuente de la imagen, el alt es una descripcion de la imagen para gente no vidente o si sale error, y el titlle es  un popup que describe la imagen
+fav icon es el logo para la barra de tareas
+va luego de las meta etiquetas, se escribe asi: <link rel="shortcuticon" href="../img/facundo desings logo.png">
+ppara poner videos usar un video de youtube, entramos en youtube, compartimos el video e clickeamos en insertar y nos da el codigo para poner en el codigo
+se utiliza la etiqueta iframe, sirve para pegar cualquier frame de cualquier pagina
+
+FORMULARIO
+SON ETIQUETAS DE COMPLETADO DE DATOS
+se usa una etiqueta form (lo hice en la secciosion de asesoria de codigo)
+action indica el archivo que recibe y procesa datos, tiene que escribirse por el bbackend
+method usa get para mandar la info por la barra de direcciones (para info no sensible) y el post es para que la info sea invisible como numeros de tarjeta de credito y no se vea
+el enctyp es el tipo de encriptacion que utiliza la pagina, por ahora no se usa
+dentro del form poner un input que luego nos dara opciones para comppletar la etiqueta segun nuestras necesidades
+para indicar cual es el lugar a completar usar la etiqueta label, dentro del for de label completar con el id del input 
+TABLE 
+Table es una etiqueta medio obsoleta  que s3e usaba mayormente en html 4, tiene atributos de border y de padding para la linea externa y para el espacio interno de las celdas
+dentro de las celdas se divide en tr para agregar filas y td para columnas
+
+---------------------------------------------------------------------CSS------------------------------------------------------------------------------------
+

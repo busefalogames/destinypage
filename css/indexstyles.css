@@ -1,0 +1,161 @@
+*   
+    {
+    margin: 0;
+    padding: 0;
+    
+    }
+html
+    {
+    /*1rem = 16px*/ 
+    font-size: 62.5%;
+    }
+header
+    {
+ 
+    background-color: rgb(225, 224, 222);
+    color: rgb(170, 170, 170);
+    text-align: center;
+    width: 100%;
+    top: 0;
+
+    }
+nav
+{
+    background-color: rgb(225, 224, 222);
+    color: black;
+    font-size: large;
+
+
+}
+/*img /*obligatorio para que las paginas se vean bien adaptandose a  todos los dispositivos*//*
+{
+    width: 100%;
+    height: 100%;
+}*/
+body
+    {
+
+    background-color: rgb(225, 224, 222);
+    color: rgb(20, 20, 20);
+    text-align: center;
+    }
+h1 /* ESCRIBIR DIRECTAMENTE LA ETIQUETA PARA APLICAR A TODAS*/
+    {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    padding: 10px;
+    }
+h2
+    {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        
+        padding: 10px;
+        
+    }
+h3
+    {
+        color: rgb(114, 167, 177);
+        text-align: center;
+    }
+a
+    { /* esto le saca el formato a los links Y A TODO LO DEMAS */
+    text-decoration: none;
+    color: black;
+
+    
+    }
+ul
+{
+    
+    text-align: center;
+    color:white;
+    list-style: url("../img/thetravelertiny.png");
+
+
+}
+.destiny1 
+{
+    text-align: left;
+    color: gray;
+    font-size: large;
+    list-style-image: url("/img/Destiny1\ icon.png");
+}
+.destiny2
+{
+    font-size: large;
+    text-align: left;
+    color: gray;
+    list-style-image: url(/img/Destiny2\ icon.png);
+}
+
+.guia li
+{
+
+        text-align: center;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+        list-style-image: url(../img/thetravelertiny.png);/*not working*/
+        color: black;
+        background-color: gray;
+ 
+        
+}
+div /* en este caso cree una etiqueta para aplicar directamete a un padre para que sus hijos lo hereden*/
+    {
+    color: rebeccapurple;
+    }
+
+#arriba
+    {
+    background-color: midnightblue;
+    }
+
+
+.subclasstxt
+{
+
+    text-align: left;
+    align-items: right;
+    padding-right: 25%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace, bold;
+
+}
+.subclasstxtright
+{
+
+    padding-left: 25%;
+    text-align: left;
+    align-items: right;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace, bold;
+
+}
+.guardianpic
+    {
+        overflow: auto;
+        display: inline-block;
+        width: 160px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 85%;
+    }
+.guardianpicright
+    {
+    overflow: auto;
+    display: inline-block;
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 85%;
+    }
+footer
+    {
+        background-color: black;
+        color: white;
+    }
