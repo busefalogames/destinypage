@@ -173,7 +173,6 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         flex-direction: row;
         justify-content: left;
         text-align: left;
-       ;
         font-size: 2rem;
         font-family: 'Courier New', Courier, monospace, bold;
         
@@ -275,6 +274,20 @@ en vex de rems que es la medida normal de letras*/
 
 
 }
+.galeria
+{/* permite la creacion de un slide show*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 36px; /*hasta aca es una galeria normal*/
+    border-radius: 15px; /* redondear pixeles*/
+
+}
+.galeria img /*se pueden alterar atributos individuyales dentro de cada clase*/
+{
+    width: 200px;
+    height: 400px;
+}
 .enemies
 {
     /* mezcla dir con wrap*/ 
@@ -294,15 +307,15 @@ en vex de rems que es la medida normal de letras*/
 {
     /* wrap hace que mantenga las imagenes en lugar aunque se achiquen las imagenes*/
     display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     order: 3;
 }
 .cabal
 {
-    /* se acomoda al reves*/
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap-reverse;
     order: 2;
 }
@@ -313,5 +326,12 @@ en vex de rems que es la medida normal de letras*/
     flex-wrap: wrap-reverse;
     order: 4;
 }
-
+button
+{
+    border-color: black;
+    background-color: white;
+    text-align: center;
+    margin: 2px;
+    
+}
 
