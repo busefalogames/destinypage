@@ -1,4 +1,10 @@
 /*
+
+LINEA 16 A 146 INDEX
+linea 146 a 360 por ahora abarca paginas normales con flexbox
+LINEA 360 A 564 ABARCA GRIDS
+de ahi en adelante se repite para port de celular #odioNoHaberLoSabidoantes
+
 * un asterisco se usa como un elemento aplicable a todo
 se utiliza la etiqueta directa para aplicar el formato a todas las etiquetas de ese tipo pueden aplicarse varias sobre una misma linea
 se utiliza un . para generar una clase aplicable a distintas etiquetas
@@ -11,8 +17,8 @@ si se usa la etiqueta !IMPORTANT cambia el formato a esta etiqueta si bien se pu
 */
 *   
     {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     
     }
 html
@@ -22,16 +28,122 @@ html
     }
 header
     {
- 
-    background-color: rgb(225, 224, 222);
+    background-color: rgb(255, 255, 255);
     color: rgb(170, 170, 170);
     text-align: center;
     width: 100%;
     top: 0;
 
-
     }
 nav
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: large;
+}
+body
+    {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 90px;
+    }
+.logo
+{
+    width: 20%;
+    height: 20%;
+}
+.guia
+{
+    background-color: gray;
+    display: flex;
+    text-decoration: none;
+    /*la direccion afecta como se organizan las cosass
+    esta row que es por defecto
+    reverse row que invierte el orden de las cosas
+    colum lo hace una columna
+    reverse colum lo opone*/
+    flex-direction: row;
+    
+    /*justify ordena donde en la pagina van a estar los elementos dentro del display
+    justify se divide en content que organiza repsecto al padre e items que organiza en base a los hiijos
+    space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
+    justify-content: space-around;
+    /*style bitch*/
+    padding: 4px;
+    /*align los ordena en el eje x mientras que justfy lo hace en el y*/
+    align-items: center;
+    gap: 10px;
+    list-style: url("../img/thetravelertiny.png");
+
+
+}
+
+
+h1 /* ESCRIBIR DIRECTAMENTE LA ETIQUETA PARA APLICAR A TODAS*/
+    {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    padding: 20px;
+    }
+h2
+    {
+        text-align: left;
+        color: rgb(0, 0, 0);
+        padding: 20px; 
+    }
+h3
+    {
+        color: rgb(114, 167, 177);
+        text-align: center;
+        padding: 20px;
+    }
+
+.destiny1 
+{
+    text-align: left;
+    background-color: gray;
+    padding: 80px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    list-style: url("../img/Destiny1\ icon.png");
+}
+.destiny2
+{
+    font-size: large;
+    text-align: left;
+    padding: 80px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(85, 85, 85);
+    list-style: url("../img/Destiny2\ icon.png");
+}
+.FillerText
+{
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+
+#arriba
+{
+    background-color: white;
+}
+
+footer
+    {
+        background-color: black;
+        color: white;
+    }
+
+
+
+/* PAGES*/
+
+.navclasses
 {
     background-color: rgb(225, 224, 222);
     color: black;
@@ -44,34 +156,6 @@ img /*obligatorio para que las paginas se vean bien adaptandose a  todos los dis
     width: 100%;
     height: 100%;
 }
-
-body
-    {
-
-    background-color: rgb(225, 224, 222);
-    color: rgb(20, 20, 20);
-    text-align: center;
-    }
-h1 /* ESCRIBIR DIRECTAMENTE LA ETIQUETA PARA APLICAR A TODAS*/
-    {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    
-    padding: 10px;
-    }
-h2
-    {
-        text-align: left;
-        color: rgb(0, 0, 0);
-        
-        padding: 10px;
-        
-    }
-h3
-    {
-        color: rgb(114, 167, 177);
-        text-align: center;
-    }
 ul
 {
     
@@ -80,8 +164,6 @@ ul
     list-style: url("../img/thetravelertiny.png");
     justify-content: center;
     align-items: center;
-
-
 }
 a
     { 
@@ -89,26 +171,7 @@ a
     text-decoration: none;
     color: black;
 
-    
     }
-/*.guia li
-{
-
-        text-align: center;
-        display: inline-block;
-        padding-left: 50px;
-        padding-right: 50px;
-        list-style-image: url(../img/thetravelertiny.png);/*not working
-        color: black;
-        background-color: gray;
-
-        
-}*/
-#arriba
-    {
-    background-color: midnightblue;
-    }
-
 
 /*con la etiqueta margin se asigna la separacion entre elñementos que lleven esta clase, se pueden espcificar margenes particulares
 o se pueden poner cada margen en una sola linea*/
@@ -136,13 +199,14 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         color: rgb(0, 0, 0);  
         position: relative;
         padding-bottom: 5%;
+        padding-left: 5%;
         display: flex;
         flex-direction: row;
         justify-content: left;
         text-align: left;
         font-size: 2rem;
         font-family: 'Courier New', Courier, monospace, bold;
-        gap: 10px;
+        gap: 20px;
 
     }
 
@@ -152,6 +216,7 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         color: rgb(0, 0, 0);
         position: relative;
         padding-bottom: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: row;
         justify-content: right;
@@ -169,6 +234,7 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         color: black;
         position: relative;
         padding-bottom: 5%;
+        padding-left: 5%;
         display: flex;
         flex-direction: row;
         justify-content: left;
@@ -184,6 +250,7 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         background-color: rgb(71, 3, 209);
         position: relative;
         padding-bottom: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: row;
         justify-content: right;
@@ -200,6 +267,7 @@ el sticky funciona como el fixed pero el objeto seguira a la pantalla una vez se
         background-color: rgb(11, 71, 9);
         position: relative;
         padding-bottom: 5%;
+        padding-left: 5%;
         display: flex;
         flex-direction: row;
         justify-content: left;
@@ -243,52 +311,6 @@ uno universal sin importar con que navegador se vea, se aplica como un * y luego
 en vex de rems que es la medida normal de letras*/
 
 
-/******FLEXBOX*/
-.logo
-{
-    
-    width: 150px;
-    height: 150px;
-}
-.guia
-{
-    background-color: gray;
-    display: flex;
-    text-decoration: none;
-    /*la direccion afecta como se organizan las cosass
-    esta row que es por defecto
-    reverse row que invierte el orden de las cosas
-    colum lo hace una columna
-    reverse colum lo opone*/
-    flex-direction: row;
-    
-    /*justify ordena donde en la pagina van a estar los elementos dentro del display
-    justify se divide en content que organiza repsecto al padre e items que organiza en base a los hiijos
-    space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
-    justify-content: space-around;
-    /*style bitch*/
-    padding: 4px;
-    /*align los ordena en el eje x mientras que justfy lo hace en el y*/
-    align-items: center;
-    gap: 10px;
-    list-style: url("../img/thetravelertiny.png");
-
-
-}
-.galeria
-{/* permite la creacion de un slide show*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 36px; /*hasta aca es una galeria normal*/
-    border-radius: 15px; /* redondear pixeles*/
-
-}
-.galeria img /*se pueden alterar atributos individuyales dentro de cada clase*/
-{
-    width: 200px;
-    height: 400px;
-}
 .enemies
 {
     /* mezcla dir con wrap*/ 
@@ -328,4 +350,677 @@ en vex de rems que es la medida normal de letras*/
     order: 4;
 }
 
+/*grids, lo use en allies Y LOCATIONS*/
+.grid-containeer
+{
+/*se puede divvidir en fracciones (fr) o en pixeles (px) 
+la fraccion se adapta a la pantalla mientras que los pixeles no
+se puede escribir repeat para conservar el tamaño en todas escribiendo en formato 
+:repeat (cantidad de vveces a repetir, tamaño a repetir)*/
+    display: grid;
+    grid-template-areas:
+    "Raids Raids Europa"
+    "Raids Raids Europa"
+    "Raids Raids TheMoon"
+    "Raids Raids TheMoon"
+    "DreamingCity Dungeons Dungeons"
+    "Neomuna Dungeons Dungeons"
+    "Playlists Playlists EDZ"
+    "Playlists Playlists Cosmodrome"
+    "Nessus DOE DOE"
+    "STW DOE DOE";
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    outline-width: 1px;
+    outline-color: black;
+    font-size: 200%;
+    text-justify: center;
+
+}
+
+.Europa,.TheMoon,.DreamingCity,.Neomuna,.Nessus,.STW,.EDZ,.Cosmodrome,.Raids,.Dungeons,.Playlists,.DOE
+{
+    max-width: 100%;
+    max-height: 200%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.Raids
+{
+    background-image: url(../img/raids.jpg);
+    grid-area: Raids;
+    align-self: self-start;
+    height: 100%;
+}
+.Dungeons
+{
+    background-image: url(../img/dungeons.jpg);
+    grid-area: Dungeons;
+    align-self: self-start;
+    height: 100%;
+}
+.Playlists
+{
+    background-image: url(../img/coreplaylist.jpg);
+    grid-area: Playlists;
+    align-self: self-start;
+    height: 100%;
+}
+
+.DOE
+{  
+    background-image: url(../img/daresofeternity.jpg);
+    grid-area: DOE;
+    align-self: self-start;
+    height: 100%;
+}
+.Europa
+{
+    background-image: url(../img/europa.jpg);
+    grid-area: Europa;
+    align-self: start;
+}
+.TheMoon
+{ 
+    background-image: url(../img/themoon.jpg);
+    grid-area: TheMoon; 
+    align-self: start;
+}
+.DreamingCity
+{ 
+    background-image: url(../img/dreaming\ city.jpg);
+    grid-area: DreamingCity;
+    align-self: start;
+}
+.Nessus
+{
+    background-image: url(../img/nessus.jpg);
+    grid-area: Nessus;
+    align-self: start;
+}
+.Neomuna
+{ 
+    background-image: url(../img/neomuna.jpg);
+    grid-area: Neomuna;
+    align-self: start;
+}
+.STW
+{
+    background-image: url(../img/savathunthroneworld.jpg);
+    grid-area: STW;
+    align-self: start;
+}
+.Cosmodrome
+{
+    background-image: url(../img/cosmodrome.jpg);
+    grid-area: Cosmodrome;
+    align-self: start;
+}
+.EDZ
+{
+    background-image: url(../img/edz.jpg);
+    grid-area: EDZ;
+    align-self: start;
+}
+
+/**********************************ALLIES********************************/
+.grilla
+{
+   
+   display: grid;
+   grid-template-areas:
+   "nav header header aside"
+   "nav TowerAllies TowerAllies aside"
+   "nav FieldAllies FieldAllies aside"
+   "nav LoreAllies LoreAllies aside"
+   "footer footer footer footer";
+   
+    border: solid  5px   white;
+    background-color: gray;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace, bold;
+    
+}
+.border
+    {
+        border: 5px solid white;
+        background-color: gray ;
+    }
+header
+    {
+        grid-area: header;
+    }
+nav 
+    {
+        grid-area: nav;
+    }
+footer
+    {
+        grid-area: footer;
+    }
+#FieldAllies
+    {
+        grid-area: FieldAllies;
+        background-color: rgb(25, 59, 25);
+        color: white;
+    }
+#TowerAllies
+    {
+        grid-area: TowerAllies;
+        background-color: aliceblue;
+        color: black;
+    }
+#LoreAllies
+{
+    grid-area: LoreAllies;
+    background-color: rgb(249, 253, 184);
+    color: purple;
+}
+
+.aside
+    {
+        grid-area: aside;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/shawhan.jpg);
+    }
+
+.guiagrid
+{
+    background-color: gray;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    /*la direccion afecta como se organizan las cosass
+    esta row que es por defecto
+    reverse row que invierte el orden de las cosas
+    colum lo hace una columna
+    reverse colum lo opone*/
+    flex-direction: column;
+    
+    /*justify ordena donde en la pagina van a estar los elementos dentro del display
+    space arround divide dejando bordes en la pagina, hay otros tipos pero este ta piola*/
+    justify-content: left;
+    /*style bitch*/
+    padding: 4px;
+    /*align los ordena en el eje x mientras que justfy lo hace en el y*/
+    align-items: left;
+    gap: 10px;
+    list-style: url("../img/thetravelertiny.png");
+
+
+}
+
+
+/*portcelu*/
+/*esto se aplica hasta los pixeles establecidos (se puede poner mid size con comportamientos intermedios con max y min) */
+@media (max-width: 400px)
+{
+    html
+        {
+        font-size: 62.5%;
+        }
+    header
+        {
+        background-color: rgb(105, 105, 105);
+        color: rgb(211, 211, 211);
+        text-align: center;
+        width: 100%;
+        top: 0;
+        }
+    nav
+    {
+        background-color: rgb(95, 95, 95);
+        color: rgb(255, 255, 255);
+        font-size: medium;
+    }
+    body
+        {
+
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin: 1px;
+        padding: 2px;
+        }
+    .logo
+    {
+        width: 10%;
+        height: 10%;
+    }
+    .guia
+    {
+        background-color: rgb(187, 187, 187);
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 4px;
+        align-items: center;
+        gap: 1px;
+        color: white;
+    }
+
+
+    h1
+        {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 2px;
+        }
+    h2
+        {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 2px; 
+        }
+    h3
+        {
+            color: rgb(114, 167, 177);
+            text-align: center;
+        }
+
+    .destiny1 
+    {
+        text-align: left;
+        background-color: gray;
+        padding: 1px;
+        color: rgb(255, 255, 255);
+        font-size: large;
+        align-items: center;
+        justify-content: center;
+        list-style: url("../img/Destiny1\ icon.png");
+    }
+    .destiny2
+    {
+        font-size: large;
+        text-align: left;
+        padding: 1px;
+        color: rgb(252, 252, 252);
+        background-color: rgb(85, 85, 85);
+        list-style: url("../img/Destiny2\ icon.png");
+    }
+    .FillerText
+    {
+        font-size: large;
+        background-color: black;
+        color: white;
+    }
+
+    #arriba
+    {
+        background-color: rgb(155, 155, 155);
+        color: white;
+    }
+
+    footer
+        {
+            background-color: black;
+            color: white;
+        }
+
+
+
+    .navclasses
+    {
+        background-color: rgb(119, 119, 119);
+        color: white;
+        font-size: large;
+        justify-content: left;
+
+    }
+    img /*obligatorio para que las paginas se vean bien adaptandose a  todos los dispositivos*/
+    {
+        width: 100%;
+        height: 100%;
+    }
+    ul
+    {
+        background-color: black;
+        text-align: left;
+        color:white;
+        justify-content: left;
+        align-items: left;
+    }
+    a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+    .solar/* PARA CLASES*/
+
+        {
+            background-color: rgb(131, 48, 0);  
+            color: rgb(53, 53, 53);  
+            position: relative;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            text-align: left;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace, bold;
+            gap: 10px;
+
+        }
+
+    .arc
+        {
+            background-color: rgb(37, 172, 165);
+            color: rgb(53, 53, 53);
+            position: relative;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            text-align: left;
+            align-items: right;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace, bold;
+            
+        }
+
+    .void
+        {
+            background-color: rgb(77, 10, 73);
+            color: rgb(68, 67, 67);
+            position: relative;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            text-align: left;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace, bold;
+            
+
+        }
+    .stasis
+        {
+            color: white;
+            background-color: rgb(48, 2, 139);
+            position: relative;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            
+            text-align: left;
+            align-items: right;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace, bold;
+            
+        }
+    .strand
+        {
+            color: rgb(179, 179, 179);
+            background-color: rgb(10, 53, 8);
+            position: relative;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            text-align: left;
+            
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace, bold;
+
+        }
+
+    .guardianpic
+        {
+            overflow: auto;
+            display: inline-block;
+            width: 80px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 85%;
+        }
+    .guardianpicright
+        {
+        overflow: auto;
+        display: inline-block;
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 85%;
+        }
+    footer
+        {
+            background-color: black;
+            color: white;
+        }
+    .enemies
+    {
+        /* mezcla dir con wrap*/ 
+        display: flex;
+        flex-flow: row nowrap;
+        order: 0;
+    }
+    .fallen
+    {/*flex wrap autoajusta la cantidad de cosas en base al tamapo de la pantalla*/
+        /*la funcion order permite que estos elementos se arreglen via CSS en vez de html*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        order: 1;
+    }
+    .vex
+    {
+        /* wrap hace que mantenga las imagenes en lugar aunque se achiquen las imagenes*/
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        order: 3;
+    }
+    .cabal
+    {
+        /* se acomoda al reves*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        order: 2;
+    }
+    .boss
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        order: 4;
+    }
+    /*grids, lo use en allies Y LOCATIONS*/
+    .grid-containeer
+    {
+        display: grid;
+        grid-template-areas:
+        "Raids"
+        "Europa"
+        "TheMoon"
+        "DreamingCity"
+        "Dungeons"
+        "Neomuna"
+        "Playlists"
+        "EDZ"
+        "Cosmodrome"
+        "Nessus"
+        "DOE"
+        "STW";
+
+        text-align: center;
+        color: rgb(255, 255, 255);
+        outline-width: 1px;
+        outline-color: black;
+        font-size: 100%;
+        text-justify: center;
+
+    }
+
+    .Europa,.TheMoon,.DreamingCity,.Neomuna,.Nessus,.STW,.EDZ,.Cosmodrome,.Raids,.Dungeons,.Playlists,.DOE
+    {
+        max-width: 100%;
+        max-height: 200%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .Raids
+    {
+        background-image: url(../img/raids.jpg);
+        grid-area: Raids;
+        align-self: self-start;
+        height: 100%;
+    }
+    .Dungeons
+    {
+        background-image: url(../img/dungeons.jpg);
+        grid-area: Dungeons;
+        align-self: self-start;
+        height: 100%;
+    }
+    .Playlists
+    {
+        background-image: url(../img/coreplaylist.jpg);
+        grid-area: Playlists;
+        align-self: self-start;
+        height: 100%;
+    }
+
+    .DOE
+    {  
+        background-image: url(../img/daresofeternity.jpg);
+        grid-area: DOE;
+        align-self: self-start;
+        height: 100%;
+    }
+    .Europa
+    {
+        background-image: url(../img/europa.jpg);
+        grid-area: Europa;
+        align-self: start;
+    }
+    .TheMoon
+    { 
+        background-image: url(../img/themoon.jpg);
+        grid-area: TheMoon; 
+        align-self: start;
+    }
+    .DreamingCity
+    { 
+        background-image: url(../img/dreaming\ city.jpg);
+        grid-area: DreamingCity;
+        align-self: start;
+    }
+    .Nessus
+    {
+        background-image: url(../img/nessus.jpg);
+        grid-area: Nessus;
+        align-self: start;
+    }
+    .Neomuna
+    { 
+        background-image: url(../img/neomuna.jpg);
+        grid-area: Neomuna;
+        align-self: start;
+    }
+    .STW
+    {
+        background-image: url(../img/savathunthroneworld.jpg);
+        grid-area: STW;
+        align-self: start;
+    }
+    .Cosmodrome
+    {
+        background-image: url(../img/cosmodrome.jpg);
+        grid-area: Cosmodrome;
+        align-self: start;
+    }
+    .EDZ
+    {
+        background-image: url(../img/edz.jpg);
+        grid-area: EDZ;
+        align-self: start;
+    }
+
+    /**********************************ALLIES********************************/
+    .grilla
+    {
+    
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "TowerAllies"
+    "FieldAllies"
+    "LoreAllies"
+    "aside"
+        "footer";
+    
+        border: solid  1px   white;
+        background-color: gray;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace, bold;
+        
+    }
+    .border
+        {
+            border: 1px solid white;
+            background-color: gray ;
+        }
+    header
+        {
+            grid-area: header;
+        }
+    nav 
+        {
+            grid-area: nav;
+        }
+    footer
+        {
+            grid-area: footer;
+        }
+    #FieldAllies
+        {
+            grid-area: FieldAllies;
+            background-color: rgb(25, 59, 25);
+            color: white;
+        }
+    #TowerAllies
+        {
+            grid-area: TowerAllies;
+            background-color: aliceblue;
+            color: black;
+        }
+    #LoreAllies
+    {
+        grid-area: LoreAllies;
+        background-color: rgb(249, 253, 184);
+        color: purple;
+    }
+    .aside
+    {
+        grid-area: aside;
+        background-color: black;
+        color: black;
+        background-image: none;
+    }
+
+    .guiagrid
+    {
+        background-color: gray;
+        display: flex;
+        text-decoration: none;
+        color: black;
+        flex-direction: column;
+        justify-content: left;
+        padding: 1px;
+        align-items: left;
+        gap: 2px;
+    }
+}
 
