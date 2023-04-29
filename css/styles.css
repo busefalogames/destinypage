@@ -310,6 +310,7 @@ uno universal sin importar con que navegador se vea, se aplica como un * y luego
 /*agregar la etiqueta html al principio y decirle fontsize = 62.5% altera los rem para que vayan en px
 en vex de rems que es la medida normal de letras*/
 
+
 .enemies
 {
     /* mezcla dir con wrap*/ 
@@ -329,15 +330,15 @@ en vex de rems que es la medida normal de letras*/
 {
     /* wrap hace que mantenga las imagenes en lugar aunque se achiquen las imagenes*/
     display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     order: 3;
 }
 .cabal
 {
-    /* se acomoda al reves*/
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap-reverse;
     order: 2;
 }
@@ -348,6 +349,7 @@ en vex de rems que es la medida normal de letras*/
     flex-wrap: wrap-reverse;
     order: 4;
 }
+
 /*grids, lo use en allies Y LOCATIONS*/
 .grid-containeer
 {
