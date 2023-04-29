@@ -13,98 +13,112 @@ la fraccion se adapta a la pantalla mientras que los pixeles no
 se puede escribir repeat para conservar el tamaño en todas escribiendo en formato 
 :repeat (cantidad de vveces a repetir, tamaño a repetir)*/
     display: grid;
+    grid-template-areas:
+    "Raids Raids Europa"
+    "Raids Raids Europa"
+    "Raids Raids TheMoon"
+    "Raids Raids TheMoon"
+    "DreamingCity Dungeons Dungeons"
+    "Neomuna Dungeons Dungeons"
+    "Playlists Playlists EDZ"
+    "Playlists Playlists Cosmodrome"
+    "Nessus DOE DOE"
+    "STW DOE DOE";
 
-    width: 95%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 750px);
-    background-color: black;
-    border: solid blue;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    outline-width: 1px;
+    outline-color: black;
     font-size: 200%;
     text-justify: center;
 
 }
 
-.Raids,.Dungeons,.Playlists,.Europa,.DOE,.TheMoon,.DreamingCity,.Neomuna,.Nessus,.STW,.EDZ,.Cosmodrome
+.Europa,.TheMoon,.DreamingCity,.Neomuna,.Nessus,.STW,.EDZ,.Cosmodrome,.Raids,.Dungeons,.Playlists,.DOE
 {
-    height: 100%;
-    background-size: 100%;
+    max-width: 100%;
+    max-height: 200%;
+    background-size: cover;
     background-repeat: no-repeat;
+    
 }
+
 .Raids
 {
     background-image: url(../img/raids.jpg);
-    
-
+    grid-area: Raids;
+    align-self: self-start;
+    height: 100%;
 }
 .Dungeons
 {
-    
     background-image: url(../img/dungeons.jpg);
-    
-    
-    
+    grid-area: Dungeons;
+    align-self: self-start;
+    height: 100%;
 }
 .Playlists
 {
     background-image: url(../img/coreplaylist.jpg);
-
+    grid-area: Playlists;
+    align-self: self-start;
+    height: 100%;
 }
 
 .DOE
-{
-    
+{  
     background-image: url(../img/daresofeternity.jpg);
-
+    grid-area: DOE;
+    align-self: self-start;
+    height: 100%;
 }
 .Europa
 {
-    
     background-image: url(../img/europa.jpg);
-
+    grid-area: Europa;
+    align-self: start;
 }
 .TheMoon
-{
-    
+{ 
     background-image: url(../img/themoon.jpg);
- 
+    grid-area: TheMoon; 
+    align-self: start;
 }
 .DreamingCity
-{
-    
+{ 
     background-image: url(../img/dreaming\ city.jpg);
-
+    grid-area: DreamingCity;
+    align-self: start;
 }
 .Nessus
 {
-    
     background-image: url(../img/nessus.jpg);
-  
+    grid-area: Nessus;
+    align-self: start;
 }
 .Neomuna
-{
-    
+{ 
     background-image: url(../img/neomuna.jpg);
-  
+    grid-area: Neomuna;
+    align-self: start;
 }
 .STW
 {
-    
     background-image: url(../img/savathunthroneworld.jpg);
-
+    grid-area: STW;
+    align-self: start;
 }
 .Cosmodrome
 {
-    
     background-image: url(../img/cosmodrome.jpg);
-    
+    grid-area: Cosmodrome;
+    align-self: start;
 }
 .EDZ
 {
-    
     background-image: url(../img/edz.jpg);
-   
+    grid-area: EDZ;
+    align-self: start;
 }
 .guia2
 {
@@ -129,22 +143,20 @@ se puede escribir repeat para conservar el tamaño en todas escribiendo en forma
     list-style: url("../img/thetravelertiny.png");
 
 }
-#grilla
+/**********************************ALLIES********************************/
+.grilla
 {
    
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav TowerAllies loreallies"
-        "nav FieldAllies loreallies"
-        "nav footer footer";
-    grid-template-rows: 1fr 3fr 3fr 2fr;
-    grid-template-columns: 20% 40% 40%;
-    column-gap: 15px;
-    row-gap: 25px;
+   display: grid;
+   grid-template-areas:
+   "nav header header aside"
+   "nav TowerAllies TowerAllies aside"
+   "nav FieldAllies FieldAllies aside"
+   "nav LoreAllies LoreAllies aside"
+   "footer footer footer footer";
+   
     border: solid  5px   white;
     background-color: gray;
-    height: 100vh;
     font-size: large;
     font-family: 'Courier New', Courier, monospace, bold;
     
@@ -158,30 +170,41 @@ header
     {
         grid-area: header;
     }
-footer
-    {
-        grid-area: footer;
-    }
-section#FieldAllies
-    {
-        grid-area: FieldAllies;
-    }
-section#TowerAllies
-    {
-        grid-area: TowerAllies;
-    }
 nav 
     {
         grid-area: nav;
     }
-aside
+footer
+    {
+        grid-area: footer;
+    }
+#FieldAllies
+    {
+        grid-area: FieldAllies;
+        background-color: rgb(25, 59, 25);
+        color: white;
+    }
+#TowerAllies
+    {
+        grid-area: TowerAllies;
+        background-color: aliceblue;
+        color: black;
+    }
+#LoreAllies
+{
+    grid-area: LoreAllies;
+    background-color: rgb(249, 253, 184);
+    color: purple;
+}
+
+.aside
     {
         grid-area: aside;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/shawhan.jpg);
     }
-section#loreallies
-{
-    grid-area: loreallies;
-}
+
 .guia
 {
     background-color: gray;
@@ -207,3 +230,4 @@ section#loreallies
 
 
 }
+
